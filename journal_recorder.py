@@ -1,3 +1,7 @@
 class JournalRecorder:
     def __init__(self, output_file):
         self.output_file = output_file
+
+    def record_multiple_lines(self):
+        """Captures user input and writes to the designated file."""
+        with open(self.output_file, 'w') as file:

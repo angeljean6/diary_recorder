@@ -8,3 +8,7 @@ class JournalRecorder:
             while True:
                 user_input = input("Enter line: ")
                 file.write(f"{user_input}\n")
+
+                choice = input("Are there more lines y/n? ").lower()
+                if choice != 'y':
+                    break

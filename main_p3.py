@@ -5,3 +5,6 @@ def main():
 
     print("--- Start Journal Entry ---")
     my_journal.record_multiple_lines()
+
+if __name__ == "__main__":
+    main()

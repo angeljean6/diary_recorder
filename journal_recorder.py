@@ -12,3 +12,4 @@ class JournalRecorder:
                 choice = input("Are there more lines y/n? ").lower()
                 if choice != 'y':
                     break
+            print(f"\nSuccess: Content saved to {self.output_file}.")

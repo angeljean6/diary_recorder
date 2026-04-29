@@ -5,3 +5,6 @@ class JournalRecorder:
     def record_multiple_lines(self):
         """Captures user input and writes to the designated file."""
         with open(self.output_file, 'w') as file:
+            while True:
+                user_input = input("Enter line: ")
+                file.write(f"{user_input}\n")
